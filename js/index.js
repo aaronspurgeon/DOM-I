@@ -41,6 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
+// navbar
 const allLinks = document.querySelectorAll('nav a');
 allLinks[0].textContent = siteContent["nav"]["nav-item-1"];
 allLinks[1].textContent = siteContent["nav"]["nav-item-2"];
@@ -50,6 +51,7 @@ allLinks[4].textContent = siteContent["nav"]["nav-item-5"];
 allLinks[5].textContent = siteContent["nav"]["nav-item-6"];
 console.log(allLinks);
 
+// cta section
 const ctaLogo = document.getElementById('cta-img');
 ctaLogo.setAttribute('src', siteContent["cta"]["img-src"]);
 
@@ -58,4 +60,28 @@ ctaText.textContent = siteContent['cta']['h1'];
 
 const ctaBtn = document.querySelector('.cta-text button');
 ctaBtn.textContent = siteContent['cta']['button'];
+
+
+// middle content
+const middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+const topContentTitle = document.querySelectorAll('.top-content .text-content h4');
+topContentTitle[0].textContent = siteContent['main-content']['features-h4'];
+topContentTitle[1].textContent = siteContent['main-content']['about-h4'];
+
+const topContentText = document.querySelectorAll('.top-content .text-content p');
+topContentText[0].textContent = siteContent['main-content']['features-content'];
+topContentText[1].textContent = siteContent['main-content']['about-content'];
+
+const btmContentTitle = document.querySelectorAll('.bottom-content .text-content h4');
+btmContentTitle[0].textContent = siteContent['main-content']['services-h4'];
+btmContentTitle[1].textContent = siteContent['main-content']['product-h4'];
+btmContentTitle[2].textContent = siteContent['main-content']['vision-h4'];
+
+const btmContentText = document.querySelectorAll('.bottom-content .text-content p');
+btmContentText[0].textContent = siteContent['main-content']['services-content'];
+btmContentText[1].textContent = siteContent['main-content']['product-content'];
+btmContentText[2].textContent = siteContent['main-content']['vision-content'];
+
 
