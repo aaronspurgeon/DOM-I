@@ -85,3 +85,14 @@ btmContentText[1].textContent = siteContent['main-content']['product-content'];
 btmContentText[2].textContent = siteContent['main-content']['vision-content'];
 
 
+// contact
+
+const contactTitle = document.querySelector('.contact h4');
+contactTitle.textContent = siteContent['contact']['contact-h4'];
+
+const contactText = document.querySelectorAll('.contact p');
+contactText[0].textContent = siteContent['contact']['address'];
+contactText[1].textContent = siteContent['contact']['phone'];
+contactText[2].textContent = siteContent['contact']['email'];
+
+
