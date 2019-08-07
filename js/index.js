@@ -50,3 +50,12 @@ allLinks[4].textContent = siteContent["nav"]["nav-item-5"];
 allLinks[5].textContent = siteContent["nav"]["nav-item-6"];
 console.log(allLinks);
 
+const ctaLogo = document.getElementById('cta-img');
+ctaLogo.setAttribute('src', siteContent["cta"]["img-src"]);
+
+const ctaText = document.querySelector('.cta-text h1');
+ctaText.textContent = siteContent['cta']['h1'];
+
+const ctaBtn = document.querySelector('.cta-text button');
+ctaBtn.textContent = siteContent['cta']['button'];
+
