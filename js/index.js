@@ -49,7 +49,15 @@ allLinks[2].textContent = siteContent["nav"]["nav-item-3"];
 allLinks[3].textContent = siteContent["nav"]["nav-item-4"];
 allLinks[4].textContent = siteContent["nav"]["nav-item-5"];
 allLinks[5].textContent = siteContent["nav"]["nav-item-6"];
-console.log(allLinks);
+
+const nav = document.querySelector('nav');
+const firstNavItem = document.createElement('a');
+const lastNavItem = document.createElement('a');
+firstNavItem.textContent = 'Sign In';
+lastNavItem.textContent = 'Extras'
+nav.prepend(firstNavItem);
+nav.append(lastNavItem);
+
 
 // cta section
 const ctaLogo = document.getElementById('cta-img');
