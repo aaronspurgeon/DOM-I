@@ -42,7 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // navbar
-const allLinks = document.querySelectorAll('nav a');
+const allLinks = document.querySelectorAll('header nav a');
 allLinks[0].textContent = siteContent["nav"]["nav-item-1"];
 allLinks[1].textContent = siteContent["nav"]["nav-item-2"];
 allLinks[2].textContent = siteContent["nav"]["nav-item-3"];
@@ -57,6 +57,11 @@ firstNavItem.textContent = 'Sign In';
 lastNavItem.textContent = 'Extras'
 nav.prepend(firstNavItem);
 nav.append(lastNavItem);
+
+const a = document.querySelectorAll('a');
+a.forEach(item => item.style.color = 'green');
+
+
 
 
 // cta section
