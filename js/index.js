@@ -41,6 +41,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
+
+
 // navbar
 const allLinks = document.querySelectorAll('header nav a');
 allLinks[0].textContent = siteContent["nav"]["nav-item-1"];
@@ -113,5 +115,20 @@ contactText[2].textContent = siteContent['contact']['email'];
 
 const footer = document.querySelector('footer p');
 footer.textContent = siteContent['footer']['copyright'];
+
+// styles stretch
+const container = document.querySelector('.container');
+const headerFour = document.querySelectorAll('h4');
+
+a.forEach(item => item.style.textDecoration = 'none');
+
+container.style.fontFamily = 'Arial';
+
+ctaText.style.fontFamily = 'Arial';
+ctaBtn.style.fontFamily = 'Arial';
+
+headerFour.forEach(item => item.style.fontFamily = 'Arial');
+headerFour.forEach(item => item.style.fontWeight = 'bold');
+headerFour.forEach(item => item.style.fontSize = '1.75rem');
 
 
